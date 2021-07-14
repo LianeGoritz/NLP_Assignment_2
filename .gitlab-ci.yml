@@ -1,0 +1,9 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  script:
+    - python3.6 shannon.py '&&'
+    - python3.6 classify.py
+    
